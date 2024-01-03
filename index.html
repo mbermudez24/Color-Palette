@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Colores</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f9fa;
+        }
+
+        .color-box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+
+        .color-code {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            color: #000;
+            /* Texto negro por defecto */
+        }
+
+        .color-box:hover .color-code {
+            opacity: 1;
+        }
+
+        /* Agregado para cambiar el color del texto según la luminosidad del fondo */
+        .color-box.light-text {
+            color: #000;
+            /* Negro para fondos claros */
+        }
+
+        .color-box.dark-text {
+            color: #fff;
+            /* Blanco para fondos oscuros */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-box light-text" style="background-color: #f5f9fa;">
+        <div class="color-code">#f5f9fa</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #e1e4e5;">
+        <div class="color-code">#e1e4e5</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #d9a336;">
+        <div class="color-code">#d9a336</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #23CCAC;">
+        <div class="color-code">#23CCAC</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #36bed9;">
+        <div class="color-code">#36bed9</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #3695d9;">
+        <div class="color-code">#3695d9</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #3651d9;">
+        <div class="color-code">#3651d9</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #6c36d9;">
+        <div class="color-code">#6c36d9</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #be36d9;">
+        <div class="color-code">#be36d9</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #d9365f;">
+        <div class="color-code">#d9365f</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #992626;">
+        <div class="color-code">#992626</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #A65329;">
+        <div class="color-code">#A65329</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #B3862C;">
+        <div class="color-code">#B3862C</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #6FB32C;">
+        <div class="color-code">#6FB32C</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #38B32B;">
+        <div class="color-code">#38B32B</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #16A585;">
+        <div class="color-code">#16A585</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #2C9CB3;">
+        <div class="color-code">#2C9CB3</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #2C7BB3;">
+        <div class="color-code">#2C7BB3</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #2C43B3;">
+        <div class="color-code">#2C43B3</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #592CB3;">
+        <div class="color-code">#592CB3</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #9C2CB3;">
+        <div class="color-code">#9C2CB3</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #B32C4E;">
+        <div class="color-code">#B32C4E</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #f5f9fa;">
+        <div class="color-code">#f5f9fa</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #e1e4e5;">
+        <div class="color-code">#e1e4e5</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #4b4c4d;">
+        <div class="color-code">#4b4c4d</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #323333;">
+        <div class="color-code">#323333</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #66c4ff;">
+        <div class="color-code">#66c4ff</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #5585ff;">
+        <div class="color-code">#5585ff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ac59ff;">
+        <div class="color-code">#ac59ff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #f266ff;">
+        <div class="color-code">#f266ff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ff73ad;">
+        <div class="color-code">#ff73ad</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ff5040;">
+        <div class="color-code">#ff5040</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #fe9040;">
+        <div class="color-code">#fe9040</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ffcf40;">
+        <div class="color-code">#ffcf40</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #b0ff40;">
+        <div class="color-code">#b0ff40</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #5fff40;">
+        <div class="color-code">#5fff40</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #3ffccd;">
+        <div class="color-code">#3ffccd</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #40dfff;">
+        <div class="color-code">#40dfff</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #40b0ff;">
+        <div class="color-code">#40b0ff</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #3f6efc;">
+        <div class="color-code">#3f6efc</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #8f40ff;">
+        <div class="color-code">#8f40ff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ef40ff;">
+        <div class="color-code">#ef40ff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ff407f;">
+        <div class="color-code">#ff407f</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #bf3030;">
+        <div class="color-code">#bf3030</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #cc6633;">
+        <div class="color-code">#cc6633</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #7efcd2;">
+        <div class="color-code">#7efcd2</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #70efff;">
+        <div class="color-code">#70efff</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ff7866;">
+        <div class="color-code">#ff7866</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #fcb165;">
+        <div class="color-code">#fcb165</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #ff7866;">
+        <div class="color-code">#ff7866</div>
+    </div>
+    <div class="color-box dark-text" style="background-color: #fcb165;">
+        <div class="color-code">#fcb165</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #ffe359;">
+        <div class="color-code">#ffe359</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #ccff66;">
+        <div class="color-code">#ccff66</div>
+    </div>
+    <div class="color-box light-text" style="background-color: #96ff73;">
+        <div class="color-code">#96ff73</div>
+    </div>
+</body>
+
+</html>
