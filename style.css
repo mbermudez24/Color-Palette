@@ -1,0 +1,56 @@
+/**
+ * File: style.css
+ * Description: Stylesheet for the color palette webpage.
+ */
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f9fa;
+}
+
+/* Color Box Styles */
+.color-box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+/* Color Code Styles */
+.color-code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #000;
+    /* Default text color */
+}
+
+/* Color Box Hover Styles */
+.color-box:hover .color-code {
+    opacity: 1;
+}
+
+.color-box.dark-text {
+    color: #000;
+    /* Dark text color */
+}
