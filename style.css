@@ -1,27 +1,47 @@
-/**
- * File: style.css
- * Description: Stylesheet for the color palette webpage.
- */
-
-/* Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: 'roboto', sans-serif;
     margin: 0;
-    background-color: #f5f9fa;
+
+    background-color: #F0F0F0;
+    /* Set background color */
 }
 
-/* Color Box Styles */
+header {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.palette-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    /* Adjust based on the number of colors */
+    gap: 8px;
+    max-width: 1200px;
+    /* Adjust based on the number of columns */
+    margin: auto;
+    /* Center the container */
+}
+
 .color-box {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100px;
     margin: 10px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -29,28 +49,12 @@ body {
 
 .color-box:hover {
     transform: scale(1.1);
-}
-
-/* Color Code Styles */
-.color-code {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    color: #000;
-    /* Default text color */
-}
-
-/* Color Box Hover Styles */
-.color-box:hover .color-code {
     opacity: 1;
 }
 
-.color-box.dark-text {
-    color: #000;
-    /* Dark text color */
+
+.hex-code {
+    color: #fff;
+    /* Text color for better visibility */
+    user-select: all;
 }
